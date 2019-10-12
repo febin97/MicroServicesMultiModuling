@@ -1,0 +1,1 @@
+An online application that helps users manage movies listed on movie database

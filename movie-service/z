@@ -1,0 +1,14 @@
+version: "2"
+services:
+  db:
+    container_name: mongodb
+    image: mongo
+    ports:
+      - '27017:27017'
+  app:
+    container_name: mov
+    build: ./
+    ports:
+      - '8080:8080'
+    links:
+      - db:mongodb
